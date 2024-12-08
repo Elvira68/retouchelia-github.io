@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+            <div class="logo">
+                <img src="logo.png" alt="LOGO">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <section class="faq-section">
+            <div class="faq-item">
+                <p class="question"><strong>What services do you offer?</strong></p>
+                <p class="answer">I offer product retouching for photos that you make or need to edit.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question"><strong>How can I contact you?</strong></p>
+                <p class="answer">You can contact me through the "Contact Me" page or via my social media profiles.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question"><strong>What are the prices?</strong></p>
+                <p class="answer">I discuss prices individually with each client when placing an order.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question"><strong>How fast will my project take?</strong></p>
+                <p class="answer">During meeting we will set a deadline by which I have to finish working on your photos.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Email: <a href="mailto:elvira.13.bu@gmail.com">elvira.13.bu@gmail.com</a></p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">My Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Elvira's Retouching. All rights reserved.</p>
+            <p>Follow me on <a href="https://www.instagram.com/el_viva_b/" target="_blank"><img src="instagram-logo.png" alt="Instagram Logo" class="social-logo"> Instagram</a></p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    document.querySelectorAll('.answer').forEach(ans => ans.style.display = 'none');
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

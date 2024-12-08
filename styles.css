@@ -1,0 +1,208 @@
+body {
+    font-family: 'Sofia', cursive;
+    background-color: #fffcfd; /* Lighter pink background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer, nav {
+    background-color: #fffdec; /* Very light golden yellow */
+    position: relative; /* Ensure the navigation is not fixed */
+}
+
+header {
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    width: 100px; /* Adjust this value to fit your desired logo size */
+    height: auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #C71585; /* Dark pink text color */
+    text-align: center;
+    position: relative;
+}
+
+h1:before, h1:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #C71585; /* Dark pink color */
+    margin: 10px auto;
+}
+
+.product-image figure,
+.thumbnails figure {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center; /* Center align the text under the image */
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black transparent background */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 18px;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+/* Home page specific figcaption styles */
+.home-figcaption {
+    position: static;
+    background-color: #ffffff; /* White background */
+    border: 2px solid #c71585; /* Dark pink border */
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Adjust as needed */
+    margin-top: 10px; /* Space between the image and caption */
+    padding: 5px; /* Padding inside the caption */
+    opacity: 1; /* Ensure visibility */
+    width: 150px; /* Fixed width for consistency */
+    height: 30px; /* Fixed height for consistency */
+    display: inline-block; /* To keep the size consistent */
+}
+
+.description {
+    background-color: #fffacd; /* Very light golden yellow */
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #c71585; /* Dark pink border for description */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a raised effect */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-grid figure {
+    background-color: #fffdec; /* Very light golden yellow */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #999;
+}
+
+footer {
+    background-color: #fffdec; /* Very light golden yellow */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #c71585; /* Dark pink border at the top */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #c71585; /* Dark pink link color */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p:first-of-type {
+    margin-bottom: 20px;
+}
+
+.social-logo {
+    width: 24px; /* Size of the Instagram logo */
+    height: auto;
+    margin-right: 5px; /* Space between the logo and the text */
+    vertical-align: middle; /* Align the logo with the text */
+}
+
