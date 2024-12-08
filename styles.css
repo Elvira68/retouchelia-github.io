@@ -1,3 +1,5 @@
+/* Author: Elvira Budzko */
+/* body style */
 body {
     font-family: 'Sofia', cursive;
     background-color: #fffcfd; /* Lighter pink background */
@@ -5,6 +7,9 @@ body {
     padding: 0;
     color: #333;
 }
+
+/* header style */
+
 
 header, footer, nav {
     background-color: #fffdec; /* Very light golden yellow */
@@ -14,6 +19,8 @@ header, footer, nav {
 header {
     padding: 10px 0;
 }
+
+/* nav style */
 
 nav {
     display: flex;
@@ -45,12 +52,16 @@ nav ul li a {
     width: 100px; /* Adjust this value to fit your desired logo size */
     height: auto;
 }
+/* main style */
+
 
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
+
+
 
 h1 {
     color: #C71585; /* Dark pink text color */
@@ -79,6 +90,8 @@ h1:before, h1:after {
     justify-content: space-between;
     margin: 20px 0;
 }
+/* figures style */
+
 
 figure {
     position: relative;
@@ -118,7 +131,7 @@ figure:hover figcaption {
     background-color: #ffffff; /* White background */
     border: 2px solid #c71585; /* Dark pink border */
     color: #333; /* Dark text color */
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px; 
     margin-top: 10px; /* Space between the image and caption */
     padding: 5px; /* Padding inside the caption */
     opacity: 1; /* Ensure visibility */
@@ -143,7 +156,7 @@ figure:hover figcaption {
 }
 
 .portfolio-grid figure {
-    background-color: #fffdec; /* Very light golden yellow */
+    background-color: #fffdec; 
     height: auto;
     display: flex;
     flex-direction: column;
@@ -153,11 +166,14 @@ figure:hover figcaption {
     color: #999;
 }
 
+/* footer style */
+
+
 footer {
-    background-color: #fffdec; /* Very light golden yellow */
+    background-color: #fffdec; 
     padding: 20px 0;
     text-align: center;
-    border-top: 2px solid #c71585; /* Dark pink border at the top */
+    border-top: 2px solid #c71585; 
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
@@ -187,7 +203,7 @@ footer {
 }
 
 .footer-content a {
-    color: #c71585; /* Dark pink link color */
+    color: #c71585; 
     text-decoration: none;
 }
 
@@ -204,5 +220,58 @@ footer {
     height: auto;
     margin-right: 5px; /* Space between the logo and the text */
     vertical-align: middle; /* Align the logo with the text */
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .thumbnails {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thumbnails {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
